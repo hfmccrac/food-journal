@@ -1,0 +1,10 @@
+<app-add-entry 
+(onAddEntry)="addEntry($event)">
+</app-add-entry>
+
+<app-entry-item
+    *ngFor="let entry of entries" 
+    [entry]="entry" 
+    (onDeleteEntry)="deleteEntry(entry)"
+    (onToggleYucky)="toggleYucky(entry)">
+</app-entry-item>

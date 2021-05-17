@@ -1,0 +1,7 @@
+<div 
+[ngClass]="{yucky: entry.yucky}" 
+class="entry" 
+(dblclick)="onToggle(entry)">
+    <h3>{{entry.text}} <fa-icon (click)="onDelete(entry)" [ngStyle]="{'color': 'red'}" [icon]="faTimes"></fa-icon></h3>
+    <p>{{entry.day}}</p>
+</div>
